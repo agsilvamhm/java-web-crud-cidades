@@ -31,14 +31,16 @@
                 </tr>
             </thead>
             <tbody>
+            <#list listaCidades as cidade>
                 <tr>
-                    <td>Londrina</td>
-                    <td>Paraná</td>
+                    <td>${cidade.nome}</td>
+                    <td>${cidade.estado}</td>
                     <td class="d-flex d-justify-content-center">
                         <a class="btn btn-warning mr-3">ALTERAR</a>
                         <a class="btn btn-danger mr-3">EXCLUIR</a>
                     </td>
                 </tr>
+            </#list>
             </tbody>
         </table>
     </div>
