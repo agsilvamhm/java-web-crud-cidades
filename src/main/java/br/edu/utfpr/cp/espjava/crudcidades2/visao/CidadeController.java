@@ -14,7 +14,8 @@ public class CidadeController {
         var cidades = Set.of(
           new Cidade("Cornélio Procópio", "PR"),
           new Cidade("Assis", "SP"),
-          new Cidade("Itajaí", "SC")
+          new Cidade("Itajaí", "SC"),
+          new Cidade("Campina Grande", "PB")
         );
         memoria.addAttribute("listaCidades", cidades);
         return "/crud";
